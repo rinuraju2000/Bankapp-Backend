@@ -1,20 +1,22 @@
 //Mongodb connection with nodejs
 
-//1)Connection library  -mongoose - npm i mongoose
 
-//Import Mongoose
-const mongoose=require('mongoose')
+//1 Connection library - mongoose - npm i mongoose
 
-//2)Define connection between mongoose and node
-mongoose.connect('mongodb://localhost:27017/Bankapp')
+//import Mongoose
+const mongoose = require('mongoose')
 
-//3)Create a model and schema for strong data
+//2 Define connection between mongoose and node
+mongoose.connect('mongodb://localhost:27017/BankappApr')
+
+//3 create a model and schema for storing data
 const User=mongoose.model('User',{
     username:String,
     acno:Number,
     password:String,
     balance:Number,
     transactions:[]
+
 })
 
 module.exports={

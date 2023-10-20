@@ -11,7 +11,7 @@
     "express",
     "mongodb"
   ],
-  "author": "Rinu",
+  "author": "Amritha",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
